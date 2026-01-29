@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  /*     
+        The designs were created to the following widths:
+        
+        - Mobile: 375px
+        - Desktop: 1440px
+     */
+
+  /* 
+       ### Color
+     */
+  --Green: hsl(158, 36%, 37%);
+  --DarkGreen: hsl(158, 42%, 18%);
+
+  /* 
+  
+  ### Neutral
+
+   */
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  background-color: var(--Cream);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  height: 450px;
+}
+.container-2 {
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 325px;
+  padding: 10px;
+  background: var(--White);
+}
+.container-2 .FloarContainet-2 {
+  color: var(--Grey);
+  text-align: start;
+  padding: 10px;
+  margin: 5px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.FloarContainet {
+  padding-left: 10px;
+  line-height: 1.4rem;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: var(--Grey);
+}
+.content img {
+  width: 330px;
+  border-radius: 10px 0px 0px 10px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 10px;
+}
+.price h1 {
+  color: var(--Green);
+  padding: 10px;
+  font-weight: 900;
+}
+.price span {
+  text-decoration: line-through;
+  color: var(--Grey);
+}
+
+button {
+  padding: 15px;
+  width: 300px;
+  border-radius: 6px;
+  margin: auto;
+  color: var(--White);
+  background-color: var(--Green);
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 700;
+}
+button:hover {
+  background-color: var(--DarkGreen);
+}
+.container-2 > h1 {
+  text-align: start;
+  width: 95%;
+  margin: auto;
+}
+
+.cart-button {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: var(--Green);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart-icon {
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 670px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .content img {
+    width: 345px;
+    border-radius: 0px;
+    height: 400px;
+  }
+  .container-2 {
+    border-radius: 0px;
+  }
+  body {
+    height: auto;
+  }
+}
