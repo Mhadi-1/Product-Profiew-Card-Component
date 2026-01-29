@@ -1,7 +1,7 @@
 # Product Profiew Card 
 Small Product Profiew Card Recponcive layout Bulid Use Css-FlexBox-MediaQ and HTML 
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site](https://mhadi-1.github.io/Product-Profiew-Card-Component/)
 
 ### Built with
 
